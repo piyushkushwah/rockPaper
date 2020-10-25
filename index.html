@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <div class="logo">
+                <img src="./assets/logo.svg" alt="">
+            </div>
+            <div class="points">
+                <p>SCORE</p>
+                <h1>0</h1>
+            </div>
+        </div>
+
+        <div id="select_element" class="wrapper">
+
+            <div id="circle1" class="circle_wrap">
+                <div class="circle1" onclick="inputs(1)">
+                    <div class="circle_white">
+                        <img src="./assets/icon-paper.svg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- <div id="line1" class="line"></div>
+            <div id="line2" class="line"></div>
+            <div id="line3" class="line"></div> -->
+
+
+            <div id="circle2" class="circle_wrap">
+                <div id="circle2" class="circle1" onclick="inputs(0)">
+                    <div class="circle_white">
+                        <img src="./assets/icon-rock.svg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div id="circle3" class="circle_wrap" onclick="inputs(2)">
+                <div class="circle1">
+                    <div class="circle_white">
+                        <img src="./assets/icon-scissors.svg" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="display_result" class="wrapper">
+
+
+        </div>
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
