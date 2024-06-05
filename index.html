@@ -18,50 +18,51 @@
             </div>
             <div class="points">
                 <p>SCORE</p>
-                <h1>0</h1>
+                <h1 id="userScore">0</h1>
             </div>
         </div>
 
-        <div id="select_element" class="wrapper">
+        <div id="selectUserInputElement" class="wrapper">
 
-            <div id="circle1" class="circle_wrap">
-                <div class="circle1" onclick="inputs(1)">
-                    <div class="circle_white">
-                        <img src="./assets/icon-paper.svg" alt="">
+            <div id="paper" onclick="userInput(1)">
+                <div class="circle">
+                    <div class="circle_white-border">
+                        <img src="./assets/icon-paper.svg" alt="paper">
                     </div>
                 </div>
             </div>
 
-            <!-- <div id="line1" class="line"></div>
-            <div id="line2" class="line"></div>
-            <div id="line3" class="line"></div> -->
-
-
-            <div id="circle2" class="circle_wrap">
-                <div id="circle2" class="circle1" onclick="inputs(0)">
-                    <div class="circle_white">
-                        <img src="./assets/icon-rock.svg" alt="">
+            <div id="rock" onclick="userInput(0)">
+                <div class="circle">
+                    <div class="circle_white-border">
+                        <img src="./assets/icon-rock.svg" alt="rock">
                     </div>
                 </div>
             </div>
 
-            <div id="circle3" class="circle_wrap" onclick="inputs(2)">
-                <div class="circle1">
-                    <div class="circle_white">
-                        <img src="./assets/icon-scissors.svg" alt="">
+            <div id="scissors" onclick="userInput(2)">
+                <div class="circle">
+                    <div class="circle_white-border">
+                        <img src="./assets/icon-scissors.svg" alt="scissors">
                     </div>
                 </div>
             </div>
 
         </div>
 
-        <div id="display_result" class="wrapper">
+        <div id="displayResult" class="wrapper">
 
 
         </div>
 
+        <div id="popupWrapper">
+            <div class="body">
+                <h1>Congratulations!!!</h1>
+                <h3>You have won the game!!</h3>
+                <button class="button" onclick="playAgain()">Play Again</button>
+            </div>
+        </div>
     </div>
-
     <script src="./script.js"></script>
 </body>
 
